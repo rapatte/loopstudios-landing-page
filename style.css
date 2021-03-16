@@ -6,6 +6,12 @@
   box-sizing: inherit;
 }
 
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -106,6 +112,14 @@ a {
     margin-left: 0px;
   }
 }
+@keyframes faderight {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100vw;
+  }
+}
 .hamburger-logo {
   display: flex;
   flex-direction: row;
@@ -138,14 +152,6 @@ a {
   display: none;
 }
 
-@keyframes faderight {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: 100vw;
-  }
-}
 .fade-right {
   animation: faderight 0.5s ease;
 }
@@ -179,5 +185,115 @@ a {
   color: dimgray;
   font-size: 1.6rem;
 }
+
+.creations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  padding: 2rem;
+}
+.creations .desktop-btn {
+  display: none;
+}
+.creations .creations-title {
+  padding-bottom: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 9vw;
+  color: black;
+  text-transform: uppercase;
+}
+.creations .creation-card {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  height: 15vh;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.creations .creation-card p {
+  margin-left: 2rem;
+}
+.creations .earth {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/mobile/image-deep-earth.jpg");
+}
+.creations .arcade {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/mobile/image-night-arcade.jpg");
+}
+.creations .soccer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-soccer-team.jpg);
+}
+.creations .grid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-grid.jpg);
+}
+.creations .up-above {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-from-above.jpg);
+}
+.creations .pocket-borealis {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-pocket-borealis.jpg);
+}
+.creations .curiosity {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-curiosity.jpg);
+}
+.creations .fisheye {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/mobile/image-fisheye.jpg);
+}
+.creations .mobile-btn {
+  height: 3rem;
+  width: 9rem;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border: 0.1rem solid black;
+  margin-top: 2rem;
+}
+
+footer {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 3rem 2rem 4rem 2rem;
+  margin-top: 5rem;
+}
+footer li {
+  list-style-type: none;
+}
+footer .left-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .nav-footer {
+  line-height: 6rem;
+  margin: 3rem 0 5rem 0;
+}
+footer .right-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .right-footer .social-media {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+footer .right-footer .copyright {
+  color: dimgray;
+}
+
+/*------------------------------------------------------------VERSION DESKTOP*------------------------------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */

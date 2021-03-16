@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
     <link rel="stylesheet" href="style.css">
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
@@ -80,24 +75,43 @@
 
     <section class="creations">
         <h2 class="creations-title">Our creations</h2>
-        <ul class="list-creations">
-          <li><a class="earth creation-card"><img src="./images/mobile/image-deep-earth.jpg" alt="Deep earth"></a></li>
-          <li><a class="arcade creation-card"><img src="./images/mobile/image-night-arcade.jpg" alt="Night arcade"></a></li>
-          <li><a class="soccer creation-card"><img src="./images/mobile/image-soccer-team.jpg" alt="Soccer team VR"></a></li>
-          <li><a class="grid creation-card"><img src="./images/mobile/image-grid.jpg" alt="The grid"></a></li>
-          <li><a class="up-above creation-card"><img src="./images/mobile/image-from-above.jpg" alt="From up above VR"></a></li>
-          <li><a class="pocket-borealis creation-card"><img src="./images/mobile/image-pocket-borealis.jpg" alt="Pocket borealis"></a></li>
-          <li><a class="curiosity creation-card"><img src="./images/mobile/image-curiosity.jpg" alt="The curiosity"></a></li>
-          <li><a class="fisheye creation-card"><img src="./images/mobile/image-fisheye.jpg" alt="Make it fisheye"></a></li>
+        <button class="desktop-btn">SEE ALL</button>
+        
+          <div class="earth creation-card"><p>DEEP<br/>EARTH</p></div> 
+          <div class="arcade creation-card"><p>NIGHT<br/> ARCADE</p></div> 
+          <div class="soccer creation-card"><p>SOCCER<br/> TEAM VR</p></div> 
+          <div class="grid creation-card"><p>THE<br/> GRID</p></div> 
+          <div class="up-above creation-card"><p>FROM UP<br/> ABOVE VR</p></div> 
+          <div class="pocket-borealis creation-card"><p>POCKET<br/> BOREALIS</p></div> 
+          <div class="curiosity creation-card"><p>THE<br/> CURIOSITY</p></div> 
+          <div class="fisheye creation-card"><p>MAKE IT<br/> FISHEYE</p></div> 
         </ul>
         <button class="mobile-btn">SEE ALL</button>
     </section>
-    
-
-        
-       About Careers Events Products
-    Support © 2021 Loopstudios. All rights reserved.
-    
+    <footer>
+      <div class="left-footer">
+        <h2 class="title-footer">loopstudios</h1>
+        <ul class="nav-footer">
+          <li><a href="#" class="link-nav">About</a></li>
+          <li><a href="#" class="link-nav">Careers</a></li>
+          <li><a href="#" class="link-nav">Events</a></li>
+          <li><a href="#" class="link-nav">Products</a></li>
+          <li><a href="#" class="link-nav">Support</a></li>
+        </ul>
+      </div>
+      <div class="right-footer">
+        <div class="social-media">
+          <a href="#"><img src="./images/icon-facebook.svg" alt="facebook"></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="twitter"></a>
+          <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest"></a>
+          <a href="#"><img src="./images/icon-instagram.svg" alt="instagram"></a>
+        </div>
+        <div class="copyright">
+          © 2021 Loopstudios. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>  
   </body>
-  <script src="./app.js"></script>
+  
 </html>
