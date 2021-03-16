@@ -23,6 +23,10 @@ body {
   color: #8c8c8c;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -78,12 +82,13 @@ a {
   margin-top: 8rem;
   border: 0.1rem solid white;
   padding: 3rem;
+  width: fit-content;
 }
 
 .slogan-text {
   color: white;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 4.5rem;
+  font-size: 10vw;
 }
 
 .hamburger-menu {
@@ -329,11 +334,11 @@ footer .right-footer .copyright {
   .header .desktop-menu li {
     margin: 0 1rem 0 1rem;
   }
-  .header .linknav {
+  .header .desktop-menu .linknav {
     position: relative;
     display: block;
   }
-  .header .linknav:hover::before, .header .linknav:active::before {
+  .header .desktop-menu .linknav:hover::before, .header .desktop-menu .linknav:active::before {
     content: "";
     display: flex;
     justify-content: center;

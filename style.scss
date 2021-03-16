@@ -19,6 +19,9 @@ body {
     font-size: 1.6rem;
     color: $DarkGray;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 a {
     text-decoration: none;
     color: $White;
@@ -67,12 +70,13 @@ a {
 .slogan-box {
     margin-top: 8rem;
     border: 0.1rem solid $White;
-    padding: 3rem;    
+    padding: 3rem; 
+    width: fit-content;   
 }
 .slogan-text {
     color: $White;
     font-family: $font-josefin-sans;
-    font-size: 4.5rem;
+    font-size: 10vw;
 }
 .hamburger-menu {
 	position: absolute;
@@ -296,9 +300,7 @@ footer {
             list-style: none;
             padding-right: 4rem;
             li{margin: 0 1rem 0 1rem;}
-                      
-        }
-        .linknav{
+            .linknav{
                 position: relative;
                 display: block;
                     &:hover::before,&:active::before{
@@ -311,7 +313,8 @@ footer {
                     position: absolute;
                     bottom: -10px;
                 }
-            }
+            }          
+        }
         .slogan-box{
             margin-top: 20rem ;
             width: 50%;
