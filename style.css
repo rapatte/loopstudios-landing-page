@@ -77,7 +77,7 @@ a {
 .slogan-box {
   margin-top: 8rem;
   border: 0.1rem solid white;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .slogan-text {
@@ -295,9 +295,165 @@ footer .right-footer .copyright {
 }
 
 /*------------------------------------------------------------VERSION DESKTOP*------------------------------------------------------------------*/
-@media only screen and (min-width: 375px) {
-  body {
+@media only screen and (min-width: 775px) {
+  .header {
+    height: 100vh;
+    padding: 3rem 6.5rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .header .logo {
+    font-size: 5rem;
+  }
+  .header .hamburger {
     display: none;
+  }
+  .header .desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    font-family: "Alata", sans-serif;
+    font-size: 2rem;
+    list-style: none;
+    padding-right: 4rem;
+  }
+  .header .desktop-menu li {
+    margin: 0 1rem 0 1rem;
+  }
+  .header .desktop-menu .linknav {
+    position: relative;
+    display: block;
+  }
+  .header .desktop-menu .linknav:active::before {
+    content: "pouet";
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+  }
+  .header .slogan-box {
+    margin-top: 20rem;
+    width: 50%;
+    height: auto;
+  }
+  .header .slogan-box .slogan-text {
+    font-size: 5vw;
+  }
+
+  .presentation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: 600px;
+    margin: 10rem 6.5rem;
+    padding-left: 20vw;
+  }
+  .presentation .mobile-presentation-img {
+    display: none;
+  }
+  .presentation .desktop-presentation-img {
+    display: block;
+    width: 731px;
+    height: 500px;
+  }
+  .presentation .description {
+    position: absolute;
+    background-color: white;
+    padding: 90px;
+    width: 400px;
+    height: 450px;
+    left: 450px;
+    top: 150px;
+    margin-left: 20vw;
+  }
+  .presentation .description .description-title {
+    font-size: 4rem;
+  }
+
+  .creations {
+    margin: 10rem 6.5rem;
+    padding-left: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+    height: auto;
+  }
+  .creations .mobile-btn {
+    display: none;
+  }
+  .creations .creations-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+  }
+  .creations .creations-header .desktop-btn {
+    display: block;
+    height: 4rem;
+    width: 13rem;
+    font-family: "Alata", sans-serif;
+    background-color: white;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border: 0.5mm ridge black;
+  }
+  .creations .creations-header .desktop-btn:hover {
+    cursor: pointer;
+  }
+  .creations .creations-header .desktop-btn:active {
+    background-color: black;
+    color: white;
+  }
+  .creations .creations-header .creations-title {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  .creations .creation-card {
+    width: 15vw;
+    height: 30vh;
+    font-size: 32px;
+    padding: 22rem 0 0 1rem;
+  }
+  .creations .creation-card p {
+    font-size: 2vw;
+  }
+  .creations .earth {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-deep-earth.jpg");
+  }
+  .creations .arcade {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-night-arcade.jpg");
+  }
+  .creations .soccer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-soccer-team.jpg");
+  }
+  .creations .grid {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-grid.jpg");
+  }
+  .creations .up-above {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-from-above.jpg");
+  }
+  .creations .pocket-borealis {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-pocket-borealis.jpg");
+  }
+  .creations .curiosity {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-curiosity.jpg");
+  }
+  .creations .fisheye {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-fisheye.jpg");
   }
 }
 

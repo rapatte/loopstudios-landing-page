@@ -67,8 +67,7 @@ a {
 .slogan-box {
     margin-top: 8rem;
     border: 0.1rem solid $White;
-    padding: 1rem;
-    
+    padding: 3rem;    
 }
 .slogan-text {
     color: $White;
@@ -267,7 +266,134 @@ footer {
 /*------------------------------------------------------------VERSION DESKTOP*------------------------------------------------------------------*/
 
 @media only screen and (min-width: $Mobile){
-    body{
-        display: none;
+    .header {
+        height: 100vh;
+        padding: 3rem 6.5rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./images/desktop/image-hero.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        .logo{
+            font-size: 5rem;
+        }
+        .hamburger{
+            display: none;
+        }
+        .desktop-menu{
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            font-family: $font-alata;
+            font-size: 2rem;
+            list-style: none;
+            padding-right: 4rem;
+            li{margin: 0 1rem 0 1rem;}
+            .linknav{
+                position: relative;
+                display: block;
+                    &:active::before{
+                    content: "pouet";
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $White;
+                    position: absolute;
+                    bottom: -10px;
+                }
+            }          
+        }
+        .slogan-box{
+            margin-top: 20rem ;
+            width: 50%;
+            height: auto;
+            .slogan-text{
+                font-size: 5vw;
+            }
+        }
+    }
+    .presentation{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 90vh;
+        width: 600px;
+        margin: 10rem 6.5rem;
+        padding-left: 20vw;
+        .mobile-presentation-img{display: none;}
+        .desktop-presentation-img{
+            display: block;
+            width: 731px;
+            height: 500px;
+        }
+        .description{
+            position: absolute;
+            background-color: $White;
+            padding: 90px;
+            width: 400px;
+            height: 450px;
+            left: 450px;
+            top: 150px;
+            margin-left: 20vw;
+            .description-title{
+                font-size: 4rem;
+            }
+        }
+    }
+    .creations{
+        margin: 10rem 6.5rem;
+        padding-left: 10vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70vw;
+        height: auto;
+        .mobile-btn{display: none;}
+        .creations-header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            justify-content: space-between;
+            .desktop-btn{
+                display: block;
+                height: 4rem;
+                width: 13rem;
+                font-family: $font-alata;
+                background-color: $White;
+                color: $Black;
+                letter-spacing: 3px;
+                font-weight: bold;
+                font-size: 1.4rem;
+                border: 0.5mm ridge $Black;
+                &:hover{cursor: pointer;}
+                &:active{background-color: $Black;
+                         color: $White;}
+            }
+            .creations-title{
+                font-size: 5rem;
+                font-weight: bold;
+            }
+        }
+        .creation-card{
+            width: 15vw;
+            height: 30vh;
+            font-size: 32px;
+            padding: 22rem 0 0 1rem;
+            p {font-size: 2vw;}
+        }
+        .earth{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-deep-earth.jpg")}
+        .arcade{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-night-arcade.jpg")}
+        .soccer{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-soccer-team.jpg")}
+        .grid{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-grid.jpg")}
+        .up-above{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-from-above.jpg")}
+        .pocket-borealis{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-pocket-borealis.jpg")}
+        .curiosity{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-curiosity.jpg")}
+        .fisheye{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-fisheye.jpg")}
     }
 }
