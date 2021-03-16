@@ -300,7 +300,9 @@ footer {
             list-style: none;
             padding-right: 4rem;
             li{margin: 0 1rem 0 1rem;}
-            .linknav{
+                      
+        }
+        .linknav{
                 position: relative;
                 display: block;
                     &:hover::before,&:active::before{
@@ -313,8 +315,7 @@ footer {
                     position: absolute;
                     bottom: -10px;
                 }
-            }          
-        }
+            }
         .slogan-box{
             margin-top: 20rem ;
             width: 50%;
