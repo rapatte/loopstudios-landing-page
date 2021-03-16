@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #8c8c8c;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 2rem 1.5rem;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/mobile/image-hero.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.navtop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  color: white;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1rem;
+  width: auto;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.line {
+  background-color: white;
+  height: 0.16rem;
+  width: 1.7rem;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.slogan-box {
+  margin-top: 8rem;
+  border: 0.1rem solid white;
+  padding: 1rem;
+}
+
+.slogan-text {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.5rem;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem 1.5rem;
+  z-index: 30;
+  background-color: black;
+  animation: fadein 0.5s ease;
+}
+.hamburger-menu ul li {
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@keyframes fadein {
+  0% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+.hamburger-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-nav {
+  margin-top: 10rem;
+}
+.hamburger-nav li {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.hamburger-nav li:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.close-btn {
+  padding-right: 25px;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes faderight {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100vw;
+  }
+}
+.fade-right {
+  animation: faderight 0.5s ease;
+}
+
+.presentation {
+  background-color: white;
+  height: 90vh;
+  margin-top: 5rem;
+  padding: 0 3rem;
+  text-align: center;
+}
+.presentation .desktop-presentation-img {
+  display: none;
+}
+.presentation img {
+  width: 100%;
+}
+.presentation .description {
+  margin: 2rem;
+}
+.presentation .description .description-title {
+  padding-bottom: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 9vw;
+  color: black;
+  text-transform: uppercase;
+}
+.presentation .description .description-details {
+  line-height: 2.5rem;
+  color: dimgray;
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=style.css.map */

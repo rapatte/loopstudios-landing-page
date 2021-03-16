@@ -1,59 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navtop">
+        <h1 class="logo">loopstudios</h1>
+        <div class="hamburger" onclick="showMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="desktop-menu">
+          <li><a href="#" class="linknav">About</a></li>
+          <li><a href="#" class="linknav">Careers</a></li>
+          <li><a href="#" class="linknav">Events</a></li>
+          <li><a href="#" class="linknav">Products</a></li>
+          <li><a href="#" class="linknav">Support</a></li>
+        </ul>
+      </div>  
+        <div class="slogan-box">
+          <p class="slogan-text">
+            IMMERSIVE <br/>
+            EXPERIENCES <br/>
+            THAT DELIVER
+          </p>
+        </div>
+    </header>
+    <nav class="hamburger-menu hide">
+      <div class="hamburger-logo">
+        <h1 class="logo logo-text">loopstudios</h1>
+        <div class="close-btn" onclick="hideMenu()">
+          <svg
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+        </div>
+      </div>
+      <ul class="hamburger-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+    <section class="presentation">
+      <img src="./images/mobile/image-interactive.jpg" alt="Homme avec casque réalité virtuelle" />
+      <img src="./images/desktop/image-interactive.jpg" alt="Homme avec casque réalité virtuelle" class="desktop-presentation-img"
+      />      
+      <div class="description">
+        <h2 class="description-title">The leader in interactive VR</h2>
+        <p class="description-details">
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </section>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Careers
-  Events
-  Products
-  Support
+    <section class="creations">
+        <h2 class="creations-title">Our creations</h2>
+        <ul class="list-creations">
+          <li><a class="earth creation-card"><img src="./images/mobile/image-deep-earth.jpg" alt="Deep earth"></a></li>
+          <li><a class="arcade creation-card"><img src="./images/mobile/image-night-arcade.jpg" alt="Night arcade"></a></li>
+          <li><a class="soccer creation-card"><img src="./images/mobile/image-soccer-team.jpg" alt="Soccer team VR"></a></li>
+          <li><a class="grid creation-card"><img src="./images/mobile/image-grid.jpg" alt="The grid"></a></li>
+          <li><a class="up-above creation-card"><img src="./images/mobile/image-from-above.jpg" alt="From up above VR"></a></li>
+          <li><a class="pocket-borealis creation-card"><img src="./images/mobile/image-pocket-borealis.jpg" alt="Pocket borealis"></a></li>
+          <li><a class="curiosity creation-card"><img src="./images/mobile/image-curiosity.jpg" alt="The curiosity"></a></li>
+          <li><a class="fisheye creation-card"><img src="./images/mobile/image-fisheye.jpg" alt="Make it fisheye"></a></li>
+        </ul>
+        <button class="mobile-btn">SEE ALL</button>
+    </section>
+    
 
-  Immersive experiences that deliver
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        
+       About Careers Events Products
+    Support © 2021 Loopstudios. All rights reserved.
+    
+  </body>
+  <script src="./app.js"></script>
 </html>
