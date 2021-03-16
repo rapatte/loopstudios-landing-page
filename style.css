@@ -277,6 +277,9 @@ footer .left-footer {
 footer .nav-footer {
   line-height: 6rem;
   margin: 3rem 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer .right-footer {
   display: flex;
@@ -287,8 +290,11 @@ footer .right-footer .social-media {
   width: 50vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 3rem;
+}
+footer .right-footer .social-media a:not(:last-child) {
+  margin-right: 4vw;
 }
 footer .right-footer .copyright {
   color: dimgray;
@@ -323,12 +329,12 @@ footer .right-footer .copyright {
   .header .desktop-menu li {
     margin: 0 1rem 0 1rem;
   }
-  .header .desktop-menu .linknav {
+  .header .linknav {
     position: relative;
     display: block;
   }
-  .header .desktop-menu .linknav:active::before {
-    content: "pouet";
+  .header .linknav:hover::before, .header .linknav:active::before {
+    content: "";
     display: flex;
     justify-content: center;
     width: 100%;
@@ -454,6 +460,42 @@ footer .right-footer .copyright {
   }
   .creations .fisheye {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-fisheye.jpg");
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+    padding: 48px 140px;
+  }
+  footer .left-footer {
+    height: 20vh;
+  }
+  footer .left-footer .title-footer {
+    align-self: flex-start;
+  }
+  footer .left-footer .nav-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .left-footer .nav-footer li:not(:last-child) {
+    margin-right: 1.7rem;
+  }
+  footer .right-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  footer .right-footer .social-media {
+    display: flex;
+    justify-content: flex-end;
+    width: 20vw;
+    padding: 0;
+  }
+  footer .right-footer .social-media a:not(:last-child) {
+    margin-right: 2vw;
   }
 }
 

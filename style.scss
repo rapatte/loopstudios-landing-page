@@ -247,6 +247,9 @@ footer {
     .nav-footer{
         line-height: 6rem;
         margin: 3rem 0 5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .right-footer{
         display: flex;
@@ -256,8 +259,11 @@ footer {
             width: 50vw;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: center;
             margin-bottom: 3rem;
+            a:not(:last-child){
+                margin-right: 4vw;
+            }
         }
         .copyright {color: $VeryDarkGray;}
     }
@@ -290,11 +296,13 @@ footer {
             list-style: none;
             padding-right: 4rem;
             li{margin: 0 1rem 0 1rem;}
-            .linknav{
+                      
+        }
+        .linknav{
                 position: relative;
                 display: block;
-                    &:active::before{
-                    content: "pouet";
+                    &:hover::before,&:active::before{
+                    content: "";
                     display: flex;
                     justify-content: center;
                     width: 100%;
@@ -303,8 +311,7 @@ footer {
                     position: absolute;
                     bottom: -10px;
                 }
-            }          
-        }
+            }
         .slogan-box{
             margin-top: 20rem ;
             width: 50%;
@@ -395,5 +402,39 @@ footer {
         .pocket-borealis{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-pocket-borealis.jpg")}
         .curiosity{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-curiosity.jpg")}
         .fisheye{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-fisheye.jpg")}
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 20vh;
+        padding: 48px 140px;
+        .left-footer{
+            height: 20vh;
+            .title-footer{
+                align-self: flex-start;
+            }
+            .nav-footer{
+                display: flex;
+                flex-direction: row;
+                li:not(:last-child){margin-right: 1.7rem;}
+                
+            }
+        }
+        .right-footer{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            .social-media{
+                display: flex;
+                justify-content: flex-end;              
+                width: 20vw;
+                padding: 0;                
+                a:not(:last-child){
+                    margin-right: 2vw;
+                }
+            }
+        }
     }
 }
