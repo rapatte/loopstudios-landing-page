@@ -269,7 +269,10 @@ footer {
                 margin-right: 4vw;
             }
         }
-        .copyright {color: $VeryDarkGray;}
+        .copyright {
+            color: $VeryDarkGray;
+            font-size: 4vw;
+            }
     }
 }
 
@@ -458,6 +461,7 @@ footer {
                     margin-right: 2vw;
                 }
             }
+            .copyright{font-size: 1.7vw;}
         }
     }
 }

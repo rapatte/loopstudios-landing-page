@@ -303,6 +303,7 @@ footer .right-footer .social-media a:not(:last-child) {
 }
 footer .right-footer .copyright {
   color: dimgray;
+  font-size: 4vw;
 }
 
 /*------------------------------------------------------------VERSION DESKTOP*------------------------------------------------------------------*/
@@ -529,6 +530,9 @@ footer .right-footer .copyright {
   }
   footer .right-footer .social-media a:not(:last-child) {
     margin-right: 2vw;
+  }
+  footer .right-footer .copyright {
+    font-size: 1.7vw;
   }
 }
 
