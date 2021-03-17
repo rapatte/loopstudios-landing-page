@@ -393,19 +393,38 @@ footer {
         }
         .creation-card{
             width: 15vw;
-            height: 30vh;
+            height: 28.5vh;
             font-size: 32px;
             padding: 22rem 0 0 1rem;
-            p {font-size: 2vw;}
+            &:hover {color: $Black;cursor: pointer;}
+            p {
+                font-size: 2vw;
+            }
         }
-        .earth{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-deep-earth.jpg")}
-        .arcade{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-night-arcade.jpg")}
-        .soccer{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-soccer-team.jpg")}
-        .grid{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-grid.jpg")}
-        .up-above{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-from-above.jpg")}
-        .pocket-borealis{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-pocket-borealis.jpg")}
-        .curiosity{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-curiosity.jpg")}
-        .fisheye{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-fisheye.jpg")}
+        .earth{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-deep-earth.jpg");
+            &:hover{background: linear-gradient(rgba(233, 227, 227, 0.5), rgba(228, 221, 221, 0.5)),url(./images/desktop/image-deep-earth.jpg)}};
+        .arcade{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-night-arcade.jpg");
+            &:hover{background: linear-gradient(rgba(233, 227, 227, 0.5), rgba(228, 221, 221, 0.5)),url(./images/desktop/image-night-arcade.jpg)}};
+        .soccer{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-soccer-team.jpg");
+            &:hover{background: linear-gradient(rgba(233, 227, 227, 0.5), rgba(228, 221, 221, 0.5)),url(./images/desktop/image-soccer-team.jpg)}};
+        .grid{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-grid.jpg");
+            &:hover{background: linear-gradient(rgba(233, 227, 227, 0.5), rgba(228, 221, 221, 0.5)),url(./images/desktop/image-grid.jpg)}};
+        .up-above{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-from-above.jpg");
+            &:hover{background: linear-gradient(rgba(233, 227, 227, 0.5), rgba(228, 221, 221, 0.5)),url(./images/desktop/image-from-above.jpg)}};
+        .pocket-borealis{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-pocket-borealis.jpg");
+            &:hover{background: linear-gradient(rgba(233, 227, 227, 0.5), rgba(228, 221, 221, 0.5)),url(./images/desktop/image-pocket-borealis.jpg)}};
+        .curiosity{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-curiosity.jpg");
+            &:hover{background: linear-gradient(rgba(233, 227, 227, 0.5), rgba(228, 221, 221, 0.5)),url(./images/desktop/image-curiosity.jpg)}};
+        .fisheye{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/desktop/image-fisheye.jpg");
+            &:hover{background: linear-gradient(rgba(233, 227, 227, 0.5), rgba(228, 221, 221, 0.5)),url(./images/desktop/image-fisheye.jpg)}};
     }
     footer{
         display: flex;
